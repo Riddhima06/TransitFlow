@@ -1,37 +1,132 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- header -->
+    <header>
+        <div class="logo">TransitFlow</div>
+        <header>
+            <nav >
+                
+                <div class="nav_links">
+                    <p>Home</p>
+                    <p><a href="Ticket\index.html">Seat</a></p>
+                    <p>><a href="slider-main\slider-main\map\index.html">Route</a></p>
+                    <p><a href=" http://localhost:5173/"> Booking</a></p>
+                    <p><a href="3dmodel-main\index.html">Rent</a></p>
+                    <p><a href="beautiful-glass-login-form-main\index.html">Login</a></p>
+                </div>
+                
+            </nav>
+        </header>
+        <div class="search">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+    </header>
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- slider -->
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active">
+                <img src="image/img1.png">
+                <div class="content">
+                    <p>Services</p>
+                    <h3>Real-time Seat Availability</h3>
+                    <p>
+                        View real-time seat availability on buses and trains with color-coded indicators (green for available, red for full) for an easy and efficient travel experience.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <p>Services</p>
+                    <H3>Fare Estimation</H3>
+                    <p>
+                        Estimate travel fares in real-time based on route, distance, and time of day, helping users plan their trips with clear and transparent cost details.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <p>Services</p>
+                    <H3>Real-time Tracking:</H3>
+                    <p>
+                        Track buses and trains in real-time, providing accurate arrival times for a more predictable commute.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <p>Services</p>
+                    <H3>Route Optimization</H3>
+                    <p>
+                        Get AI-powered route suggestions that factor in live traffic and provide the quickest, most efficient travel paths.
+                </div>
+            </div>
+            <div class="item">
+                <img src="image\img5.jpg">
+                <div class="content">
+                    <p>Services</p>
+                    <H3>Interactive Map</H3>
+                    <p>
+                        Visualize routes, stations, and real-time seat availability through an intuitive map interface for seamless trip planning.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="image/img1.png">
+                <div class="content">
+                    Real-time Seat Availability
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    Fare Estimation
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    Real-time Tracking:
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    Route Optimization
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img5.jpg">
+                <div class="content">
+                    Interactive Map
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <title>Beautiful glass login form - Bedimcode</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="login__content">
-                <img src="assets/img/bg-login.png" alt="login image" class="login__img">
 
-                <form action="" class="login__form">
-                    <div>
-                        <h1 class="login__title">
-                            <span>Welcome</span> Back
-                        </h1>
-                        <p class="login__description">
-
-                        </p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28284.453734979423!2d77.5979008!3d27.6072696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1739010536358!5m2!1sen!2sin" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    
-                   
-
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <script src="app.js"></script>
+</body>
 </html>
