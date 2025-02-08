@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #0ff;
+    --secondary-color: #ff00ff;
+    --background-color: #111;
+    --text-color: #fff;
+    --glow-color: rgba(0, 255, 255, 0.8);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px var(--glow-color);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 20px var(--secondary-color);
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 0 0 5px white;
+}
+
+.seat.available {
+    background-color: #0f0;
+    box-shadow: 0 0 10px #0f0;
+}
+
+.seat.reserved {
+    background-color: #ff0;
+    box-shadow: 0 0 10px #ff0;
+}
+
+.seat.occupied {
+    background-color: #f00;
+    box-shadow: 0 0 10px #f00;
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px var(--glow-color);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .seat {
+        width: 40px;
+        height: 40px;
+    }
+}

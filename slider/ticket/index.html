@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Transport Seat Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <header>
+            <h1>Public Transport Seat Booking</h1>
+            <button id="mode-toggle">Toggle Dark Mode</button>
+        </header>
+        
+        <main>
+            <section class="seat-grid">
+                <h2>Seat Availability</h2>
+                <div id="seat-container"></div>
+            </section>
+            
+            <section class="fare-estimation">
+                <h2>Fare Estimation</h2>
+                <form id="fare-form">
+                    <label for="transport">Transport Mode:</label>
+                    <select id="transport" required>
+                        <option value="train">Train</option>
+                        <option value="bus">Bus</option>
+                        <option value="plane">Plane</option>
+                    </select>
+                    <label for="start">Start:</label>
+                    <input type="text" id="start" required>
+                    
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" required>
+                    
+                    <label for="class">Class:</label>
+                    <select id="class" required>
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first">First Class</option>
+                    </select>
+                    
+                    <button type="submit">Calculate Fare</button>
+                </form>
+                <div id="fare-result" class="glassmorphism">
+                    <p>Estimated Fare: <span id="fare-amount">$0.00</span></p>
+                    <p>Estimated Travel Time: <span id="travel-time">0 min</span></p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Public Transport System</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
